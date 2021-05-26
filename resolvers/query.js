@@ -10,7 +10,7 @@ const { AuthenticationError } = require('apollo-server');
 module.exports = {
   Query: {
     customers: () => Customer.find(),
-    customer: (parent, { id }) => Customer.findOne({ _id: id }),
+    customer: (parent, { name }) => Customer.findOne({ _name: name }),
     login: async (parent, { user }, context) => {
       const { email, password } = user;
       const userExists = await User.exists({ email });

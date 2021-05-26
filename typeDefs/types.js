@@ -9,7 +9,7 @@ module.exports = gql`
 
   type Customer {
     id: ID!
-    name: String
+    name: String!
     email: String
     lang: String
     plate: String
