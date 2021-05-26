@@ -15,8 +15,8 @@ module.exports = gql`
     plate: String
     atelier: String
     remark: String
-    summerTires: String
-    winterTires: String
+    summerTires: Int
+    winterTires: Int
   }
 
   type AuthData {

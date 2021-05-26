@@ -6,15 +6,15 @@ const { gql } = require('apollo-server');
 
 module.exports = gql`
   input CustomerInput {
-    id: ID!
+    id: ID
     name: String
     email: String
     lang: String
     plate: String
     atelier: String
     remark: String
-    summerTires: String
-    winterTires: String
+    summerTires: Int
+    winterTires: Int
   }
 
   input UserInput {
