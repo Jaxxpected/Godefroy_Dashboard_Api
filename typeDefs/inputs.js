@@ -8,6 +8,7 @@ module.exports = gql`
   input CustomerInput {
     id: ID
     name: String
+    picture: Upload
     email: String
     lang: String
     plate: String
@@ -15,6 +16,10 @@ module.exports = gql`
     remark: String
     summerTires: Int
     winterTires: Int
+    zlv: Int
+    zla: Int
+    zra: Int
+    zrv: Int
   }
 
   input UserInput {

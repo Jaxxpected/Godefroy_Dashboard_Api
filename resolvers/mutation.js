@@ -20,6 +20,17 @@ module.exports = {
       }
     },
 
+    updateCustomer: async (parent, { customer }, context) => {
+      try {
+        return await Customer.findOneAndUpdate({
+          ...customer,
+        });
+      } catch (e) {
+        if (e.extensions.code === 'UNAUTHENTICATED') throw e;
+        else throw new ApolloError(e.message);
+      }
+    },
+
     register: async (parent, { user }) => {
       const { name, email, password } = user;
       if (await User.exists({ email })) throw new Error('User already exists.')
