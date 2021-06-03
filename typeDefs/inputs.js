@@ -16,10 +16,26 @@ module.exports = gql`
     remark: String
     summerTires: Int
     winterTires: Int
-    zlv: Int
-    zla: Int
-    zra: Int
-    zrv: Int
+    slv: Int
+    sla: Int
+    sra: Int
+    srv: Int
+    wlv: Int
+    wla: Int
+    wra: Int
+    wrv: Int
+    tireSummer: Boolean
+    tireWinter: Boolean
+    kit: Boolean
+    tire: Boolean
+    slvp: Boolean
+    slap: Boolean
+    srap: Boolean
+    srvp: Boolean
+    wlvp: Boolean
+    wlap: Boolean
+    wrap: Boolean
+    wrvp: Boolean
   }
 
   input UserInput {
