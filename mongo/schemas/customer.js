@@ -21,8 +21,6 @@ const CustomerSchema = new mongoose.Schema({
   wla: Number,
   wra: Number,
   wrv: Number,
-  tireSummer: Boolean,
-  tireWinter: Boolean,
   kit: Boolean,
   tire: Boolean,
   slvp: Boolean,
