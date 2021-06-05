@@ -19,13 +19,13 @@ module.exports = gql`
     summerTires: Int
     winterTires: Int
     slv: String
-    sla: Float
-    sra: Float
-    srv: Float
-    wlv: Float
-    wla: Float
-    wra: Float
-    wrv: Float
+    sla: String
+    sra: String
+    srv: String
+    wlv: String
+    wla: String
+    wra: String
+    wrv: String
     kit: Boolean
     tire: Boolean
     slvp: Boolean
