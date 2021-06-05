@@ -18,7 +18,7 @@ module.exports = gql`
     remark: String
     summerTires: Int
     winterTires: Int
-    slv: Float
+    slv: String
     sla: Float
     sra: Float
     srv: Float
