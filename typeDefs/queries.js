@@ -11,5 +11,7 @@ module.exports = gql`
     login(user: UserInput):AuthData
     users:[User]
     user(id:ID):User
+    checkAdmin(id:ID):AuthData
+    renewToken(token: TokenInput):Token
   }
 `

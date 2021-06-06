@@ -10,7 +10,6 @@ module.exports = gql`
   type Customer {
     id: ID!
     name: String
-    picture: Upload
     email: String
     lang: String
     plate: String
@@ -38,9 +37,15 @@ module.exports = gql`
     wrvp: Boolean
   }
 
+  type Token {
+    token: String
+    id: ID
+  }
+
   type AuthData {
     userId: ID
     token: String
+    admin: Boolean
   }
 
   type User {

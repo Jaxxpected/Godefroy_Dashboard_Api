@@ -8,7 +8,6 @@ module.exports = gql`
   input CustomerInput {
     id: ID
     name: String
-    picture: Upload
     email: String
     lang: String
     plate: String
@@ -34,6 +33,11 @@ module.exports = gql`
     wlap: Boolean
     wrap: Boolean
     wrvp: Boolean
+  }
+
+  input TokenInput {
+    token: String
+    id: ID
   }
 
   input UserInput {

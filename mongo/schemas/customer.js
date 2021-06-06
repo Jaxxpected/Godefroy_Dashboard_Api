@@ -31,10 +31,6 @@ const CustomerSchema = new mongoose.Schema({
   wlap: Boolean,
   wrap: Boolean,
   wrvp: Boolean,
-  picture: {
-    data: Buffer,
-    contentType: String
-  }
 });
 
 module.exports = CustomerSchema;
