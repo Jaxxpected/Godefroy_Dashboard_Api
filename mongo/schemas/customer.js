@@ -3,7 +3,6 @@
  */
 
 const mongoose = require('mongoose');
-const ImageSchema = require('./image');
 
 const CustomerSchema = new mongoose.Schema({
   name: String,
@@ -32,7 +31,6 @@ const CustomerSchema = new mongoose.Schema({
   wlap: Boolean,
   wrap: Boolean,
   wrvp: Boolean,
-
   slvName: String,
   slaName: String,
   sraName: String,
@@ -41,7 +39,6 @@ const CustomerSchema = new mongoose.Schema({
   wlaName: String,
   wraName: String,
   wrvName: String,
-
   slvUrl: String,
   slaUrl: String,
   sraUrl: String,
@@ -50,7 +47,6 @@ const CustomerSchema = new mongoose.Schema({
   wlaUrl: String,
   wraUrl: String,
   wrvUrl: String,
-
   slvUrlDate: String,
   slaUrlDate: String,
   sraUrlDate: String,

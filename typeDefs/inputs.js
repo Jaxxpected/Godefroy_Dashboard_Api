@@ -33,7 +33,6 @@ module.exports = gql`
     wlap: Boolean
     wrap: Boolean
     wrvp: Boolean
-
     slvName: String
     slaName: String
     sraName: String
@@ -42,7 +41,6 @@ module.exports = gql`
     wlaName: String
     wraName: String
     wrvName: String
-
     slvUrl: String
     slaUrl: String
     sraUrl: String
@@ -51,7 +49,6 @@ module.exports = gql`
     wlaUrl: String
     wraUrl: String
     wrvUrl: String
-
     slvUrlDate: String
     slaUrlDate: String
     sraUrlDate: String
