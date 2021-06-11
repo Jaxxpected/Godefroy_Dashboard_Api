@@ -33,6 +33,13 @@ module.exports = gql`
     wlap: Boolean
     wrap: Boolean
     wrvp: Boolean
+    images: [ImageInput]
+  }
+
+  input ImageInput {
+    url: String!
+    alt: String
+    date: String
   }
 
   input TokenInput {

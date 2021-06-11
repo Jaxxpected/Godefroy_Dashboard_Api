@@ -35,6 +35,13 @@ module.exports = gql`
     wlap: Boolean
     wrap: Boolean
     wrvp: Boolean
+    image: [Image]!
+  }
+
+  type Image {
+    url: String!
+    alt: String
+    date: String
   }
 
   type Token {

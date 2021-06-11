@@ -3,6 +3,7 @@
  */
 
 const mongoose = require('mongoose');
+const ImageSchema = require('./image');
 
 const CustomerSchema = new mongoose.Schema({
   name: String,
@@ -31,6 +32,7 @@ const CustomerSchema = new mongoose.Schema({
   wlap: Boolean,
   wrap: Boolean,
   wrvp: Boolean,
+  images: [ImageSchema],
 });
 
 module.exports = CustomerSchema;
