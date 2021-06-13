@@ -41,6 +41,18 @@ module.exports = {
       };
     },
 
+    search: (parent, { search }, context) => {
+      if (!!search) {
+        const searchQuery = {
+          $or: [
+            { name: { $regex: search, $options: 'i' } },
+            { plate: { $regex: search, $options: 'i' } }
+          ]
+        };
+        return Product.find(searchQuery);
+      } else return [];
+    },
+
     renewToken: async (parent, { token, id }, context) => {
       if (context.userId === '') throw new AuthenticationError('Must authenticate!');
 
